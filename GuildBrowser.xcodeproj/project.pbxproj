@@ -153,6 +153,11 @@
 		CB9FDD2915E9B34900B3713E /* WowItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WowItemView.m; sourceTree = "<group>"; };
 		CB9FDD2A15E9B34900B3713E /* WoWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoWUtils.h; sourceTree = "<group>"; };
 		CB9FDD2B15E9B34900B3713E /* WoWUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WoWUtils.m; sourceTree = "<group>"; };
+		FACED163193CA49400DB09DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FACED169193CA49400DB09DC /* GuildBrowserLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuildBrowserLogicTests-Info.plist"; sourceTree = "<group>"; };
+		FACED16B193CA49400DB09DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FACED16D193CA49400DB09DC /* GuildBrowserLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuildBrowserLogicTests.m; sourceTree = "<group>"; };
+		FACED16F193CA49400DB09DC /* GuildBrowserLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuildBrowserLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +191,7 @@
 				CB9FDCC115E9A8DA00B3713E /* AFNetworking */,
 				CB9FDC4515E9872D00B3713E /* GuildBrowser */,
 				CB9FDC6315E9872E00B3713E /* GuildBrowserTests */,
+				FACED167193CA49400DB09DC /* GuildBrowserLogicTests */,
 				CB9FDC3E15E9872D00B3713E /* Frameworks */,
 				CB9FDC3C15E9872D00B3713E /* Products */,
 			);
@@ -207,6 +213,7 @@
 				CB9FDC4115E9872D00B3713E /* Foundation.framework */,
 				CB9FDC4315E9872D00B3713E /* CoreGraphics.framework */,
 				CB9FDC5D15E9872E00B3713E /* SenTestingKit.framework */,
+				FACED163193CA49400DB09DC /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -361,6 +368,25 @@
 			name = "view controllers";
 			sourceTree = "<group>";
 		};
+		FACED167193CA49400DB09DC /* GuildBrowserLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACED16D193CA49400DB09DC /* GuildBrowserLogicTests.m */,
+				FACED168193CA49400DB09DC /* Supporting Files */,
+			);
+			path = GuildBrowserLogicTests;
+			sourceTree = "<group>";
+		};
+		FACED168193CA49400DB09DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FACED169193CA49400DB09DC /* GuildBrowserLogicTests-Info.plist */,
+				FACED16A193CA49400DB09DC /* InfoPlist.strings */,
+				FACED16F193CA49400DB09DC /* GuildBrowserLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,6 +432,7 @@
 		CB9FDC3215E9872D00B3713E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Charlie Fulton";
 			};
@@ -553,6 +580,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB9FDC6715E9872E00B3713E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FACED16A193CA49400DB09DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACED16B193CA49400DB09DC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
